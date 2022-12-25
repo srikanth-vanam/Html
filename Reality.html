@@ -1,0 +1,260 @@
+<!Doctype html>
+	<head>
+		<meta charset="utf-8">
+		<title> Website </title>
+		<style type="text/css">
+		:root {
+			--var1: pink;
+		}
+		.start {
+			color: darkblue;
+			font-size: 20px;
+			font-family: Lobster;
+		}
+		.img-border {
+			border-width: 5px;
+			border-color: black;
+			border-style: solid;
+		
+		}
+
+		h1 {
+			background-color: green;
+		}
+		.table-body {
+			background-color: silver;
+		}
+		.blue-line {
+			background-color: lightseagreen;
+		}
+		.bodyy {
+			background-color: yellow;
+		}
+		.form-background {
+			background-color: var(--var1);
+			text-align: center;
+			display: block;
+		}
+		.d1 {background: lightskyblue;}
+		.d2 {
+			background: lightsalmon;
+			 justify-self:center; 
+		}
+		.d3 {
+			background: paleturquoise;
+			<!--align-self: end; -->
+		}
+		.d4 {background: lightpink;}
+		.d5 {
+			background: palegreen;
+			grid-column: 2 / 4;
+			grid-row: 2 / 3;
+			/* grid-area: footer; This is same as the below one; */
+			grid-area: 3/1/4/4;
+		}
+
+		.grid {
+			width: 100%;
+			font-size: 40px;
+			background:lightgrey ;
+			display: grid;
+
+
+			grid-template-columns: repeat(3, 1fr) ;
+
+			grid-template-rows: repeat(3, 100px);
+			grid-gap:10px 20px;
+			/* justify-items: safe center; 
+			align-items: flex-end; */
+
+			grid-template-areas: 
+			 "header header header"
+			 ". content content "
+			 "footer footer footer" ;
+
+		}
+
+		/* @media (min-width: 300px) {
+			.grid1 {
+				grid-template-columns: auto 1fr ;
+				grid-template-rows: auto 1fr auto;
+				grid-template-areas: 
+				"header header "
+				"advert content "
+				"footer footer " ;
+
+			}
+		} */
+
+		.d11 {background: lightskyblue;}
+		.d22 {
+			background: lightsalmon;
+			<!-- justify-self:center; -->
+		}
+		.d33 {
+			background: paleturquoise;
+			<!-- align-self: end;-->
+			grid-column: 1/3;
+			grid-row:2/3 ;
+			grid-area: 2/1/3/3;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+
+		}
+		.Ingrid-1 {
+			background-color: red;
+			
+
+		}
+		.Ingrid-2 {
+			background-color: white;
+			
+
+		}
+		.d44 {background: lightpink;}
+		.d55 {
+			background: palegreen;
+		}
+
+		.grid1 {
+			width: 100%;
+			font-size: 40px;
+			background:lightgrey ;
+
+
+			display: grid;
+			grid-template-columns: 1fr 1fr ; 
+			/* grid-template-columns: 1fr;*/
+			grid-template-rows: repeat(3, 100px); 
+			grid-gap:20px;
+			/* align-items: flex-end;*/
+			/* grid-template-areas: 
+			"header"
+			"advert"
+			"content"
+			"content"
+			"footer" ; */
+
+			
+
+		}
+		</style>
+	</head>
+	<body >
+		<h1> Image Adding </h1>
+		<p class="start"> <big>Hello!</big> Everyone if you are looking to add an <b>image</b> to html page then you are on the correct site.Hi My name is <i>Vanam Srikanth</i> and I am here to resolve your problem , for that you have to follow below Instructions </p> 
+		<h2>Instructions</h2> 
+		<ol>
+			<li>Open the browser </li>
+			<li>go to images , select one</li>
+			<li>copy it's url  </li>
+			<li>paste the url in &lt;<strong>&nbsp;a&nbsp;</strong>&gt; tag's <b>href</b> attribute  </li>
+		</ol>
+		<p> The below is the only link  </p>
+		<a href="https://www.google.com/" target="_blank"  > Google Homepage </a> 
+		<p> Uploading link to access images </p>
+		<a href="C:\Users\Vanam  Srikanth\Pictures\12.jpg" alt="an Image from local database" target="_blank"> Local image  </a>
+
+		<p> <em>Image Uploading</em></p>
+		<img  class="img-border" src="C:\Users\Vanam  Srikanth\Pictures\12.jpg" width="300" class="centre"  >
+		 <br>Local Image.
+	<div  class="blue-line">
+		<p> Using images as link </p>
+		<a href="https://youtube.com/" target="_blank"> 
+		<img  src="C:\Users\Vanam  Srikanth\Pictures\12.jpg" width="350"> <br> 
+ 	    </a>
+ 	
+ 	    <dl>
+ 	    	Sriranganatham
+ 	    	<dd>
+ 	    		&nbsp;&nbsp;-He wrote clearly.
+ 	    	</dd>
+ 	    </dl>
+ 	</div>
+ 	    <div class="table-body">
+ 	    	<table border="2" width="300" height="300" style="text-align:center; padding:auto;">
+ 	    		<thead bgcolor="pink" style="border-spacing: 20; padding:auto;">
+ 	    		<tr>
+ 	    			<th>Num1</th>
+ 	    			<th>Num2</th>
+ 	    			<th>Num3</th>
+ 	    		</tr>
+ 	    		</thead>
+ 	    	<tbody bgcolor="orange">
+ 	    		<tr>
+ 	    			<td style="color:red;background-color: white;">Red</td>
+ 	    			<td style="color:ghostwhite;background-color: red;">white</td>
+ 	    			<td style="color:royalblue;background-color: black;">Blue</td>
+ 	    		</tr>
+ 	    		<tr>
+ 	    			<td style="color:lightgoldenrodyellow;background-color: greenyellow;">Green</td>
+ 	    			<td style="color:green;background-color: darkseagreen;">Yellow</td>
+ 	    			<td style="color:indigo;background-color: lightseagreen;">Indigo</td>
+ 	    		</tr>
+ 	    	</tbody>
+ 	    	</table>
+ 	    </div>
+ 	    <div class="form-background">
+ 	    	<form style="display: block;"><br>
+ 	    		<label for="fname">First Name:</label>
+ 	    		<input type="text" placeholder="Enter your First Name" id="fname" name="fname" maxlength="20"  >
+ 	    		<br><br>
+ 	    		<label for="lname">Last Name:</label>
+ 	    		<input type="text" placeholder="Enter your Last Name"  id="lname"name="lname" maxlength="30">
+ 	    		<br><br>
+ 	    		<label for="email">E-mail:</label>
+ 	    		<input type="email" placeholder="Enter your email" id="E-mail"name="email">
+ 	    		<br><br>
+ 	    		<label for="pwd">Password:</label>
+ 	    		<input type="password" placeholder="Enter password here" id="pwd" name="pwd" maxlength="10">
+ 	    		<br><br>	
+ 	    		<input type="radio" name="Gender" id="male" value="Male">
+ 	    		<label for="Male">Male</label>
+ 	    		<input type="radio" name="Gender" id="Female" value="Female">
+ 	    		<label for="Female">Female</label>
+ 				<br><br>
+ 				<p>Choose any two </p>
+ 	    		<input type="checkbox" name="car1" value="Tata">
+ 	    		<label for="car1" >I like Tata car</label><br>
+ 	    		<input type="checkbox" name="car2" value="Toyota">
+ 	    		<label for="car2" >I like Toyota car</label><br>
+ 	    		<input type="checkbox" name="car3" value="Bolero">
+ 	    		<label for="car3" >I like Bolero car</label><br>
+ 	    		
+ 	    		
+
+
+ 	    	</form>
+ 	    </div>
+
+ 	    <br>
+ 	    <div class="grid">
+ 	    	<div class="d1">1</div>
+ 	    	<div class="d2">2</div>
+ 	    	<div class="d3">3</div>
+ 	    	<div class="d4">4</div>
+ 	    	<div class="d5">5</div>
+ 	    </div>
+ 	    <br>
+ 	    <div class="grid1">
+ 	    	<div class="d11">11</div>
+ 	    	<div class="d22">22</div>
+ 	    	<div class="d33">
+ 	    	33
+ 	    		<div class="Ingrid-1">
+ 	    			Ingrid-1
+ 	    		</div>
+ 	    		<div class="Ingrid-2">
+ 	    			Ingrid-2
+ 	    		</div>
+
+ 	    	</div>
+ 	    	<div class="d44">44</div>
+ 	    	<div class="d55">55</div>
+ 	    </div>
+ 	    
+
+	</body>
+
+</html>
